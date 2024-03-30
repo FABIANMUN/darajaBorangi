@@ -5,8 +5,8 @@ if(isset($_POST['submit'])){
   date_default_timezone_set('Africa/Nairobi');
 
   # access token
-  $consumerKey = 'GmJEYdqcZqB85IfL4OEzE867An0snrQC1I7nhCUQuk7z4MQy'; //Fill with your app Consumer Key
-  $consumerSecret = '1FwiOLGJPYKXB30R89ICUCqsUx8gk4PnyfKA73LHE92Hqv80Vsw3Rg3x74WqKQ7Y'; // Fill with your app Secret
+  $consumerKey = '3yMZoScKq08N8pZO3K5nsL3jrdiOZPBStNS2Rl6fQP0Q27Yf'; //Fill with your app Consumer Key
+  $consumerSecret = 'egq0ADPRDSRJ4MDm5NPXli4Bjv4FixpUxMqlH7GcRtz5OnP69GzyHdzcmVpe0MsE'; // Fill with your app Secret
 
   # define the variales
   # provide the following details, this part is found on your test credentials on the developer account
@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
 
   # callback url
   $CallBackURL = '
-  https://git.heroku.com/aqueous-thicket-79668.git/callback_url.php';  
+  https://protected-spire-13439-81ad3bd103b4.herokuapp.com/callback_url.php';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
